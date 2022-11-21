@@ -1,0 +1,428 @@
+{
+    "cora": {
+        "GCN": {
+            "dataset": "cora",
+            "teacher": "GCN",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 3,
+
+            "hidden_dim": 512,
+            "dropout_t": 0.6,
+            "dropout_s": 0.5,
+            "tau": 1.5,
+            "lamb": 0.4,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 0
+        },
+        "GAT": {
+            "dataset": "cora",
+            "teacher": "GAT",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 3,
+
+            "hidden_dim": 1024,
+            "dropout_t": 0.3,
+            "dropout_s": 0.6,
+            "tau": 1.2,
+            "lamb": 0.5,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 0
+        },
+        "SAGE": {
+            "dataset": "cora",
+            "teacher": "SAGE",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 3,
+
+            "hidden_dim": 512,
+            "dropout_t": 0.4,
+            "dropout_s": 0.3,
+            "tau": 1.3,
+            "lamb": 0.5,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 0
+        }
+    },
+    "citeseer": {
+        "GCN": {
+            "dataset": "citeseer",
+            "teacher": "GCN",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 2,
+
+            "hidden_dim": 256,
+            "dropout_t": 0.5,
+            "dropout_s": 0.5,
+            "tau": 1.5,
+            "lamb": 0.1,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 1
+        },
+        "GAT": {
+            "dataset": "citeseer",
+            "teacher": "GAT",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 2,
+
+            "hidden_dim": 2048,
+            "dropout_t": 0.4,
+            "dropout_s": 0.5,
+            "tau": 1.0,
+            "lamb": 0.1,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 1
+        },
+        "SAGE": {
+            "dataset": "citeseer",
+            "teacher": "SAGE",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 2,
+
+            "hidden_dim": 1024,
+            "dropout_t": 0.5,
+            "dropout_s": 0.5,
+            "tau": 1.2,
+            "lamb": 0.1,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 1
+        }
+    },
+    "pubmed": {
+        "GCN": {
+            "dataset": "pubmed",
+            "teacher": "GCN",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 2,
+
+            "hidden_dim": 1024,
+            "dropout_t": 0.3,
+            "dropout_s": 0.6,
+            "tau": 1.5,
+            "lamb": 0.0,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 2
+        },
+        "GAT": {
+            "dataset": "pubmed",
+            "teacher": "GAT",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 2,
+
+            "hidden_dim": 2048,
+            "dropout_t": 0.3,
+            "dropout_s": 0.5,
+            "tau": 1.2,
+            "lamb": 0.0,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 2
+        },
+        "SAGE": {
+            "dataset": "pubmed",
+            "teacher": "SAGE",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 2,
+
+            "hidden_dim": 2048,
+            "dropout_t": 0.6,
+            "dropout_s": 0.3,
+            "tau": 1.3,
+            "lamb": 0.0,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 2
+        }
+    },
+    "coauthor-cs": {
+        "GCN": {
+            "dataset": "coauthor-cs",
+            "teacher": "GCN",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 2,
+
+            "hidden_dim": 1024,
+            "dropout_t": 0.5,
+            "dropout_s": 0.6,
+            "tau": 1.5,
+            "lamb": 0.3,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 3
+        },
+        "GAT": {
+            "dataset": "coauthor-cs",
+            "teacher": "GAT",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 2,
+
+            "hidden_dim": 128,
+            "dropout_t": 0.4,
+            "dropout_s": 0.5,
+            "tau": 1.1,
+            "lamb": 0.3,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 3
+        },
+        "SAGE": {
+            "dataset": "coauthor-cs",
+            "teacher": "SAGE",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 2,
+
+            "hidden_dim": 256,
+            "dropout_t": 0.6,
+            "dropout_s": 0.3,
+            "tau": 1.4,
+            "lamb": 0.5,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 3
+        }
+    },
+    "coauthor-phy": {
+        "GCN": {
+            "dataset": "coauthor-phy",
+            "teacher": "GCN",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 2,
+
+            "hidden_dim": 2048,
+            "dropout_t": 0.3,
+            "dropout_s": 0.4,
+            "tau": 1.2,
+            "lamb": 0.2,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 4
+        },
+        "GAT": {
+            "dataset": "coauthor-phy",
+            "teacher": "GAT",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 2,
+
+            "hidden_dim": 256,
+            "dropout_t": 0.3,
+            "dropout_s": 0.4,
+            "tau": 1.4,
+            "lamb": 0.3,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 4
+        },
+        "SAGE": {
+            "dataset": "coauthor-phy",
+            "teacher": "SAGE",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 2,
+
+            "hidden_dim": 1024,
+            "dropout_t": 0.5,
+            "dropout_s": 0.6,
+            "tau": 1.1,
+            "lamb": 0.5,
+
+            "learning_rate": 0.01,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 4
+        }
+    },
+    "amazon-photo": {
+        "GCN": {
+            "dataset": "amazon-photo",
+            "teacher": "GCN",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 3,
+
+            "hidden_dim": 2048,
+            "dropout_t": 0.5,
+            "dropout_s": 0.6,
+            "tau": 1.3,
+            "lamb": 0.1,
+
+            "learning_rate": 0.001,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 5
+        },
+        "GAT": {
+            "dataset": "amazon-photo",
+            "teacher": "GAT",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 3,
+
+            "hidden_dim": 256,
+            "dropout_t": 0.3,
+            "dropout_s": 0.3,
+            "tau": 1.4,
+            "lamb": 0.3,
+
+            "learning_rate": 0.001,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 5
+        },
+        "SAGE": {
+            "dataset": "amazon-photo",
+            "teacher": "SAGE",
+            "student": "MLP",
+            "num_heads": 4,
+            "num_layers": 3,
+
+            "hidden_dim": 1024,
+            "dropout_t": 0.4,
+            "dropout_s": 0.4,
+            "tau": 1.5,
+            "lamb": 0.2,
+
+            "learning_rate": 0.001,
+            "weight_decay": 0.0005,
+            "max_epoch": 500,
+            "distill_mode": 0,
+            "exp_setting": "tran",
+            "seed": 2022,
+            "split_rate": 0.2,
+            "save_mode": 1,
+            "data_mode": 5
+        }
+    }
+}
