@@ -73,10 +73,10 @@ python main.py --dataset citeseer --ablation_mode 0
 If you find this project useful for your research, please use the following BibTeX entry.
 
 ```
-@inproceedings{wu2023extracting,
-  title={Extracting Low-/High- Frequency Knowledge from Graph Neural Networks and Injecting it into MLPs: An Effective GNN-to-MLP Distillation Framework},
-  author={Wu, Lirong and Lin, Haitao and Huang, Yufei and Fan, Tianyu and  and Li, Stan Z},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+@article{wu2023extracting,
+  title={Extracting Low-/High-Frequency Knowledge from Graph Neural Networks and Injecting it into MLPs: An Effective GNN-to-MLP Distillation Framework},
+  author={Wu, Lirong and Lin, Haitao and Huang, Yufei and Fan, Tianyu and Li, Stan Z},
+  journal={arXiv preprint arXiv:2305.10758},
   year={2023}
 }
 ```
